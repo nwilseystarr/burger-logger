@@ -1,25 +1,19 @@
 {
-  "name": "burger-logger",
+  "name": "mvc_design",
   "version": "1.0.0",
-  "description": "A burger logger using MySQL, Node, Express, Handlebars and a homemade ORM. Following the MVC design pattern; use Node and MySQL to query and route data in the app, and Handlebars to generate HTML.",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nwilseystarr/burger-logger.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nwilseystarr/burger-logger/issues"
-  },
-  "homepage": "https://github.com/nwilseystarr/burger-logger#readme",
   "dependencies": {
-    "express": "^4.16.4",
-    "express-handlebars": "^3.0.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
     "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "handlebars-helper-css": "^0.1.0"
   }
 }
