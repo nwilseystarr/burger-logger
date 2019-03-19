@@ -1,28 +1,18 @@
-<h1>Burgers!</h1>
+<link href= "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
 
-<h2>Burgers that have been eaten!</h2>
+<div class="container" id="container">
+  <div class="row">
+    <div class="jumbotron" id="main-header">
+    <h1><strong>Nicole's Burgers!</strong></h1>
+    </div>
+    </div>
 
-<ul class="eaten">
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+<!--Add a Burger-->
+<div class="row mx-auto add">
 
-<h2>Burgers that have not been eaten!</h2>
-
-<ul class="not-eaten">
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
 <form class="create-form">
-
+<h2>Add a Burger</h2>
   <div class="form-group">
     <label for="ca">Burger Name:</label>
     <input type="text" id="ca" name="name">
@@ -36,3 +26,40 @@
 
   <button type="submit">Add Burger</button>
 </form>
+</div>
+
+<hr>
+<br>
+
+<!--Burgers to be eaten-->
+<div class="row">
+  <div class="col not-eaten">
+<h2>Burgers to Eat!</h2>
+<small>Click the burger to eat!</small>
+<br>
+<br>
+  {{#each burgers}}
+    {{#if devoured}}
+      The Number {{id}}: {{> burgers/burger-block devoured=false}} <br>
+    {{/if}}
+  {{/each}}
+
+
+</div>
+
+<!--Burgers that have been eaten-->
+  <div class="col eaten">
+<h2>Burgers that have been eaten!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+    <br>
+    The Number {{id}}: <br>{{name}} <br>
+    {{/unless}}
+  {{/each}}
+</ul>
+</div>
+
+</div>
+</div>

@@ -1,35 +1,44 @@
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+body {
+	font-family: "Courier New",Courier,monospace;
+	font-style: normal;
+  font-weight: 700;
 }
 
-.label {
-  font-weight: bold;
+#container {
+	align-items: center;
+	width: 1170px;
 }
 
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
+#main-header {
+	background-color: yellow;
+	border-style: solid;
+  border-width: 10px;
+	color: red;
+  font-family: 'Baloo Chettan', cursive, sans-serif;
+  font-size: 3em;
+	margin-left: 62px;
+	margin-top: 15px;
+	padding: 0px;
+	text-align: center;
+	width: 1000px;
 }
 
-.form-group {
-  margin-bottom: 5px;
+.change-devoured {
+	background-color: red;
+	color: white;
+	font-size: 2em;
+	margin-left: 0px;
 }
 
-h1{
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-}
-
-.eaten{
-  text-align: right;
+.add{
+	text-align: center;
+	width: 200px;
 }
 
 .not-eaten{
-  text-align: left;
+	text-align: center;
+}
+
+.eaten{
+	text-align: center;
 }

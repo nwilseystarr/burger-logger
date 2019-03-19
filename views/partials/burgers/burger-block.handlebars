@@ -1,9 +1,10 @@
-<li>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+<ul>
 	{{name}}
-
+	<br>
 	<button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		{{#if devoured}}I'm Full!{{else}}Eat me!!{{/if}}
+		{{#if devoured}}{{else}}<i class="fas fa-hamburger"></i>{{/if}}
 	</button>
-
-	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
-</li>
+</ul>
