@@ -24,7 +24,7 @@ $(function() {
 
     var newBurger = {
       name: $("#ca").val().trim(),
-      devoured: 0
+      devoured: 1
     };
 
     // Post Request
