@@ -1,9 +1,7 @@
-//Referenced in class assignment for ORM 
-
 // Import MySQL connection.
 var connection = require("../config/connection.js");
 
-//Borrowed this helper function from an in class assignment so I can get the ? needed for the mySQL query
+//Function to print question marks based off of the vals for the SQL query
 function printQuestionMarks(num) {
   var arr = [];
   for (var i = 0; i < num; i++) {

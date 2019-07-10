@@ -8,7 +8,7 @@ This app is deployed using heroku. You can see it live [here](https://nicoles-bu
 
 [Bootstrap](https://getbootstrap.com/)<br>
 [Express](https://www.npmjs.com/package/express)<br>
-[Express](https://www.npmjs.com/package/express-handlebars)<br>
+[Express Handlebars](https://www.npmjs.com/package/express-handlebars)<br>
 [Font Awesome](https://fontawesome.com/)<br>
 [Node.js](https://nodejs.org/en/)<br>
 [mySQL](https://www.npmjs.com/package/mysql)<br>
